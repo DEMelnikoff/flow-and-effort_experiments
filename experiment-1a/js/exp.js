@@ -949,6 +949,6 @@ const exp = (function() {
 
 }());
 
-const timeline = [exp.tileGame_timeline_1, exp.tileGame_timeline_2, exp.demographics, exp.save_data];
+const timeline = [exp.tileGame_timeline_1, exp.tileGame_timeline_2, exp.demographics];
 
 jsPsych.run(timeline);

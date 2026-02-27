@@ -767,6 +767,6 @@ const exp = (function() {
 
 }());
 
-const timeline = [exp.wheel_1, exp.wheel_2, exp.wheel_3, exp.wheel_4, exp.demographics, exp.save_data];
+const timeline = [exp.wheel_1, exp.wheel_2, exp.wheel_3, exp.wheel_4, exp.demographics];
 
 jsPsych.run(timeline);
