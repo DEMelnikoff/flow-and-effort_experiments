@@ -16,8 +16,6 @@ const exp = (function() {
         moreOrLess: ['more', 'less'][difficultyDraw],
     };
 
-    console.log(settings.difficulty, settings.gameType);
-
     jsPsych.data.addProperties({
         gameType: settings.gameType,
         difficulty_1: settings.difficulty[0],

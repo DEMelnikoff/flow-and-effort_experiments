@@ -552,7 +552,6 @@ const dmPsych = (function() {
         readyToSpin = false;
         vel_max_rand = rand(vel_max + 300, vel_max + 100);
         isSpinning = true;
-        console.log("spin!");
         spin();
       };
       nSpeedUp += fpsAdjust;
@@ -1225,7 +1224,6 @@ const dmPsych = (function() {
           // apply force to ball
           Body.applyForce( ball, {x: ball.position.x, y: ball.position.y}, {x: 0, y: -force});
    
-          console.log(game.data.press_rate.reduce((partialSum, a) => partialSum + a, 0) / game.data.press_rate.length);
         };
       };
 
