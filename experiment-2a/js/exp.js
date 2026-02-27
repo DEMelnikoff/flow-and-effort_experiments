@@ -251,14 +251,14 @@ const exp = (function() {
         // set sectors, ev, sd, and mi
         let sectors, ev, sd, mi;
         if (settings.mi == 'highMI') {
-            sectors = [ wedges.two, wedges.four, wedges.seven, wedges.ten ];
+            sectors = [ wedges.three, wedges.four, wedges.five, wedges.eleven ];
             ev = 5.75;
-            sd = 3.5;
+            sd = 2.625;
             mi = 2;
         } else if (settings.mi == 'lowMI') {
             sectors = [ wedges.four, wedges.four, wedges.four, wedges.eleven ];
             ev = 5.75;
-            sd = 3.5;
+            sd = 2.625;
             mi = .81;
         };
 
@@ -317,8 +317,8 @@ const exp = (function() {
     */
 
     // scales
-    var zeroToExtremely = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8<br>Extremely'];
-    var zeroToALot = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8<br>A lot'];
+    const zeroToExtremely = ["0<br>A little", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>Extremely"];
+    const zeroToALot = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>A lot'];
 
     // constructor functions
     function MakeFlowQs(game) {
@@ -333,25 +333,25 @@ const exp = (function() {
             {
                 prompt: `During ${game}, to what extent did you feel <strong>absorbed</strong> in what you were doing?`,
                 name: `absorbed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very absorbed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More absorbed than I've ever felt"],
                 required: true,
             },
             {
                 prompt: `During ${game}, to what extent did you feel <strong>immersed</strong> in what you were doing?`,
                 name: `immersed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very immersed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More immersed than I've ever felt"],
                 required: true,
             },
             {
                 prompt: `During ${game}, to what extent did you feel <strong>engaged</strong> in what you were doing?`,
                 name: `engaged`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very engaged", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More engaged than I've ever felt"],
                 required: true,
             },
             {
                 prompt: `During ${game}, to what extent did you feel <strong>engrossed</strong> in what you were doing?`,
                 name: `engrossed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very engrossed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More engrossed than I've ever felt"],
                 required: true,
             },
         ];

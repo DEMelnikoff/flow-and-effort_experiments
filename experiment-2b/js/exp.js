@@ -323,7 +323,7 @@ const exp = (function() {
         // set sectors, ev, sd, and mi
         let sectors, ev, sd, mi;
         if (settings.miOrder == 'highMI_first' && round == 1 || settings.miOrder == 'highMI_second' && round == 2) {
-            sectors = [ wedges.two, wedges.four, wedges.seven, wedges.ten ];
+            sectors = [ wedges.three, wedges.four, wedges.five, wedges.eleven ];
             ev = 5.75;
             sd = 3.5;
             mi = 2;

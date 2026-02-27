@@ -379,12 +379,12 @@ const exp = (function() {
         if (mi_level == 'highMI') {
             sectors = settings.highMI_wheel;
             ev = 5.5;
-            sd = 3.5;
+            sd = 2.25;
             mi = 2;
         } else if (mi_level == 'lowMI') {
             sectors = settings.lowMI_wheel;
             ev = 5.5;
-            sd = 3.5;
+            sd = 2.25;
             mi = .81;
         };
 
@@ -425,9 +425,9 @@ const exp = (function() {
     */
 
     // scales
-    var zeroToExtremely = ["0<br>Not at all", '1', '2', '3', '4', '5', '6', '7', "8<br>Extremely"];
-    var zeroToALot = ['0<br>Not at all', '1', '2', '3', '4', '5', '6', '7', '8<br>A lot'];
-    var noneToALot = ['0<br>None', '1', '2', '3', '4', '5', '6', '7', '8<br>A lot'];
+    var zeroToExtremely = ["0<br>A little", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>Extremely"];
+    var zeroToALot = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>A lot'];
+    var noneToALot = ['0<br>None', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>A lot'];
     var scbScale = ['-4<br>Way too easy', '-3', '-2', '-1', '0<br>Neither too easy nor too difficult', '1', '2', '3', '4<br>Way too difficult'];
 
     // constructor functions
