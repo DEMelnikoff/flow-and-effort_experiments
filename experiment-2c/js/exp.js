@@ -6,16 +6,20 @@ const exp = (function() {
     let p = {};
 
     // define each wedge
+
+    const colors = ["#003b5c", "#0057e5", "#41b6e6", "#3ea908", "#f0cc2e", "#ec894d", "#e50000", "#e641b6"];
+    const colors_shuffled = jsPsych.randomization.repeat(colors, 1);
+
     const wedges = {
-        one: {color:"#003b5c", label:"1"},
-        three: {color:"#0057e5", label:"3"},
-        four: {color:"#41b6e6", label:"4"},
-        four_blank: {color:"#41b6e6", label:""},
-        five: {color:"#3ea908", label:"5"},
-        six: {color:"#f0cc2e", label:"6"},
-        seven: {color:"#ec894d", label:"7"},
-        eight: {color:"#e50000", label:"8"},
-        ten: {color:"#e641b6", label:"10"},
+        one: {color: colors_shuffled[0], label:"1"},
+        three: {color: colors_shuffled[1], label:"3"},
+        four: {color: colors_shuffled[2], label:"4"},
+        four_blank: {color: colors_shuffled[2], label:""},
+        five: {color: colors_shuffled[3], label:"5"},
+        six: {color: colors_shuffled[4], label:"6"},
+        seven: {color: colors_shuffled[5], label:"7"},
+        eight: {color: colors_shuffled[6], label:"8"},
+        ten: {color: colors_shuffled[7], label:"10"},
     };
 
     const highMI_wheel = [ wedges.one, wedges.three, wedges.four, wedges.five, wedges.six, wedges.seven, wedges.eight, wedges.ten ];

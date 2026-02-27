@@ -27,21 +27,24 @@ const exp = (function() {
         mi_order: settings.mi,
     });
 
+    const colors = ["#fe0000", "#800001", "#fe6a00", "#803400", "#0094fe", "#806b00", "#228B22", "#007f0e", "#ffd800", "#00497e", "#0026ff", "#001280", "#b100fe"];
+    const colors_shuffled = jsPsych.randomization.repeat(colors, 1);
+
     // define each wedge
     const wedges = {
-        one: {color:"#fe0000", label:"1"},
-        two: {color:"#800001", label:"2"},
-        three: {color:"#fe6a00", label:"3"},
-        four: {color:"#803400", label:"4"},
-        five: {color:"#0094fe", label:"5"},
-        six: {color:"#806b00", label:"6"},
-        seven: {color:"#00fe21", label:"7"},
-        eight: {color:"#007f0e", label:"8"},
-        nine: {color:"#ffd800", label:"9"},
-        ten: {color:"#00497e", label:"10"},
-        eleven: {color:"#0026ff", label:"11"},
-        twelve: {color:"#001280", label:"12"},
-        thirteen: {color:"#b100fe", label:"13"},
+        one: {color: colors_shuffled[0], label:"1"},
+        two: {color: colors_shuffled[1], label:"2"},
+        three: {color: colors_shuffled[2], label:"3"},
+        four: {color: colors_shuffled[3], label:"4"},
+        five: {color: colors_shuffled[4], label:"5"},
+        six: {color: colors_shuffled[5], label:"6"},
+        seven: {color: colors_shuffled[6], label:"7"},
+        eight: {color: colors_shuffled[7], label:"8"},
+        nine: {color: colors_shuffled[8], label:"9"},
+        ten: {color: colors_shuffled[9], label:"10"},
+        eleven: {color: colors_shuffled[10], label:"11"},
+        twelve: {color: colors_shuffled[11], label:"12"},
+        thirteen: {color: colors_shuffled[12], label:"13"},
     };
 
    /*
